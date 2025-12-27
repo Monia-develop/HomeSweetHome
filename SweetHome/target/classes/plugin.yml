@@ -1,0 +1,35 @@
+name: SweetHome
+version: '1.0-SNAPSHOT'
+main: A.M.sweetHome.SweetHome
+api-version: '1.21'
+
+commands: #on définit les commandes que l'on va utiliser et faire fonctionner dans le main
+  sethome:
+    description: créer un ou plusieurs homes
+    usage: /sethome
+
+  homes:
+    description: voir la liste de ses homes
+    usage: /homes
+
+  home:
+    description: se téléporter vers un de ses homes
+    usage: /home
+
+  delhome:
+    description: supprimer un home
+    usage: /delhome
+
+  resethome:
+    description: efface tous les homes d'un joueur
+    usage: /resethome
+
+
+permissions:
+  homes.admin:
+    default: op #seul les admins possède la permission de reset les homes des joueurs par défaut
+    description: permet à l'admin de réinitialiser les homes des autres joueurs
+  homes.max.*:
+    default: false # les joueurs ne peuvent pas modifier la limite de leur home sans permission
+    description: permet de définir la limite maximum de homes
+

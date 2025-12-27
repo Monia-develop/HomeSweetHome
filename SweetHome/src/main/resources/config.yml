@@ -1,0 +1,14 @@
+MaximumHome: 5 #nb de homes autorisés par défaut
+
+Messages: #messages personalisables utilisé dans le main
+  setHome: "Ton home a été créé avec succès"
+  listeHome: "La liste de tes homes est:"
+  limiteHome: "Tu as atteinds la limite de tes homes"
+  deleteHome: " a été supprimé avec succès"
+  teleportation: "La téléportation est lancée, ne bougez plus."
+
+Settings:
+  teleportationAttente: 3 #temps d'attente de téléportation
+  mondesinterdits:
+    - sao
+    - aot
