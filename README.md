@@ -17,11 +17,18 @@ Fonctionnalités du plugin :
 Commandes du jeu :
  
 /sethome nom :	créé un nouveau home a l'emplacement ou le joueur se trouve 
+
 /home nom : se téléporter à un home	
+
 /homes	: ouvre l'interface graphique	et donne aussi la liste des homes d'un joueur dans le chat
+
 /delhome : supprime un home
+
 /resethome joueur	: supprime tous les homes d'un joueur (seul l'administrateur peut le faire)
+
 Limites de homes : utilisez la permission homes.max.n pour définir une limite de homes pour un joueur. 
+
 --> lp user MoniaChipmunk permission set homes.max.20 true (à mettre dans le terminale)
+
 même chose pour le resethome -->  lp user MoniaChipmunk permission set homes.admin true 
 
